@@ -5,7 +5,7 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
-  array.capture do |name|
+  array.collect do |name|
     name.first = name.first.upcase
     name << "!"
   end
