@@ -7,6 +7,7 @@ end
 def summon_captain_planet(array)
   array.capture do |name|
     name.first = name.first.upcase
+    name << "!"
   end
 end
 
