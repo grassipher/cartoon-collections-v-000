@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(array)
   array.collect do |name|
-    name[0].capitalize
+    name = name.splice(0,1).capitalize + name.splice(1,name.length)
     name << "!"
   end
 end
